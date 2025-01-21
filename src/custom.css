@@ -1,0 +1,38 @@
+@import "./reset.css";
+
+@font-face {
+    font-family: 'Farhang';
+    src: url('./fonts/Farhang2FaNum-Medium.woff2') format('woff2');
+    font-weight: 400; /* Normal */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Farhang';
+    src: url('./fonts/Farhang2FaNum-Bold.woff2') format('woff2');
+    font-weight: 700; /* Bold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Farhang';
+    src: url('./fonts/Farhang2FaNum-Light.woff2') format('woff2');
+    font-weight: 300; /* Light */
+    font-style: normal;
+}
+
+
+:root {
+    --white: #ffffff;
+    --white-50: #f0f0f0;
+    --blue: #471AAA;
+}
+
+body {
+    background-color: var(--white-50);
+}
+
+*, body, html {
+    font-family: Farhang;
+    direction: rtl;
+}
