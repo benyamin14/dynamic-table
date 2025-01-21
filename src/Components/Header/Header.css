@@ -1,0 +1,44 @@
+header {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
+}
+
+.menu__icon {
+    border: 1px solid;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.2rem;
+    width: 1.5rem;
+    border: 2px solid #63A3B2;
+    color: #63A3B2;
+    cursor: pointer;
+}
+
+.menu__title {
+    border-bottom: 2px dotted #63A3B2;
+    color: #63A3B2;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header button {
+    color: #63A3B2;
+    border: 2px solid #63A3B2;
+    font-weight: bold;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
