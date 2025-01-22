@@ -19,7 +19,7 @@ function Pagination({ currentPage, totalItems, itemsPerPage, nextPage, prevPage,
                     />
                     <input 
                         className='pagination__input' 
-                        type="number" 
+                        type="text" 
                         value={currentPage} 
                         onChange={handlePageChange}
                         min="1"
