@@ -40,8 +40,8 @@ function Pagination({ currentPage, totalItems, itemsPerPage, nextPage, prevPage,
                         onChange={handleItemsPerPageChange}
                         value={itemsPerPage}
                     >
-                      {packagesArray.map((Page)=>
-                        <option value={Page} >{Page}</option>
+                      {packagesArray.map((Page,index)=>
+                        <option key={index} value={Page} >{Page}</option>
                       )
                       
                       }

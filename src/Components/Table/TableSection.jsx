@@ -84,6 +84,10 @@ function TableSection() {
         }));
     };
 
+    const deleteHandler = (id)=>{
+        setCourses(courses.filter(course => course.id !== id))
+    }
+
     return (
         <main>
             <table className="styled-table">
@@ -177,7 +181,7 @@ function TableSection() {
                             <td><button className='show-pic'>{course.pic} <BsFiletypeMp4 /></button></td>
                             <td><button className='show-course'>{course.submodule}</button></td>
                             <td style={{ width: '3rem' }}>
-                                <RiDeleteBin5Line className='delete-icon' />
+                                <RiDeleteBin5Line onClick={(e)=>deleteHandler(course.id)} className='delete-icon' />
                                 <GrDocumentText className='write-icon' />
                             </td>
                         </tr>
