@@ -38,6 +38,7 @@ function Pagination({ currentPage, totalItems, itemsPerPage, nextPage, prevPage,
                     <select 
                         className='pagination__select' 
                         onChange={handleItemsPerPageChange}
+                        value={itemsPerPage}
                     >
                       {packagesArray.map((Page)=>
                         <option value={Page} >{Page}</option>
