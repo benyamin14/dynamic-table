@@ -84,10 +84,20 @@ function TableSection() {
         }));
     };
 
-    const deleteHandler = (id)=>{
-        setCourses(courses.filter(course => course.id !== id))
+    const deleteHandler = (id) => {
+        fetch(`http://localhost:3000/courses/${id}`, {
+            method: 'DELETE',
+        })
+        .then(response => {
+            if (response.ok) {
+                setCourses(courses.filter(course => course.id !== id));
+            } else {
+                console.error('Failed to delete the course from the server');
+            }
+        })
+        .catch(error => console.error('Error:', error));
     }
-
+    
     return (
         <main>
             <table className="styled-table">
